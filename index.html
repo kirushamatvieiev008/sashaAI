@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Яблуневий Світ — Еко-яблука з Черкащини</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ХЕДЕР -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2a3 3 0 0 0-3 3c0 2 3 4 3 4s3-2 3-4a3 3 0 0 0-3-3z"/>
+          <path d="M12 21c-4.4 0-8-3.6-8-8 0-3.1 1.8-5.8 4.4-7.1C9.5 5.3 10.7 5 12 5s2.5.3 3.6.9C18.2 7.2 20 9.9 20 13c0 4.4-3.6 8-8 8z"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">Яблуневий Світ</span>
+          <span class="logo-subtitle">Черкаський сад</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#about-shapes">Унікальні форми</a></li>
+          <li><a href="#faq">Часті питання</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-contacts">
+        <a href="tel:+380971234567" class="contact-link">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +38 (097) 123-45-67
+        </a>
+        <a href="mailto:info@yablunevyi-svit.ua" class="contact-link">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@yablunevyi-svit.ua
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ГЕРОЙ-СЕКЦІЯ -->
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="badge">Черкаські сади • Натуральний продукт</span>
+      <h1>Натуральні яблука та <span class="highlight">унікальні формові екземпляри</span></h1>
+      <p>Вирощуємо з любов'ю в екологічно чистому куточку Черкащини. Замовляйте від 5 кг та отримуйте зростаючу знижку на кожний наступний кілограм!</p>
+      <div class="hero-buttons">
+        <a href="#catalog" class="btn btn-primary">Переглянути каталог</a>
+        <a href="#about-shapes" class="btn btn-outline">Як працюють форми?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- СЕКЦІЯ КАТАЛОГУ ТА ФІЛЬТРІВ -->
+  <section id="catalog" class="catalog-section container">
+    <div class="section-title">
+      <h2>Наш асортимент</h2>
+      <p>Оберіть найкращі яблука за сортом, формою та розміром</p>
+    </div>
+
+    <!-- ПОШУК ТА ФІЛЬТРИ -->
+    <div class="filter-card">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Пошук за назвою сорту (наприклад, Гала, Семеренко)...">
+      </div>
+
+      <div class="filters-grid">
+        <div class="filter-group">
+          <label for="shapeFilter">Форма яблука:</label>
+          <select id="shapeFilter">
+            <option value="all">Усі форми</option>
+            <option value="стандартна">Стандартна (кругла)</option>
+            <option value="серце">Форма «Серце» ❤️</option>
+            <option value="куб">Форма «Куб» 🧊</option>
+            <option value="зірка">Форма «Зірка» ⭐</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="sizeFilter">Розмір:</label>
+          <select id="sizeFilter">
+            <option value="all">Усі розміри</option>
+            <option value="середній">Середній (150-180g)</option>
+            <option value="великий">Великий (180-220g)</option>
+            <option value="преміум">Преміум (220g+)</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="varietyFilter">Сорт яблука:</label>
+          <select id="varietyFilter">
+            <option value="all">Усі сорти</option>
+            <option value="Гала">Гала</option>
+            <option value="Голден Делішес">Голден Делішес</option>
+            <option value="Ренет Семеренко">Ренет Семеренко</option>
+            <option value="Фуджі">Фуджі</option>
+            <option value="Чемпіон">Чемпіон</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- ГРІД КАРТОК ТОБАРІВ -->
+    <div id="productsGrid" class="products-grid">
+      <!-- Динамічно заповнюється з JS -->
+    </div>
+  </section>
+
+  <!-- ІНФО-СЕКЦІЯ ПРО ФОРМИ -->
+  <section id="about-shapes" class="shapes-info container">
+    <div class="shapes-card">
+      <div class="shapes-text">
+        <h2>Як ми вирощуємо фігурні яблука?</h2>
+        <p>У період дозрівання ми поміщаємо молоді зав'язі яблук у спеціальні екологічно безпечні світлопрозорі прес-форми. Яблуко росте всередині цієї форми, набуваючи ідеальної конфігурації (серце, куб тощо), зберігаючи 100% соковитості, вітамінів та природного смаку.</p>
+        <ul class="benefits-list">
+          <li>✨ 100% ексклюзивний подарунок</li>
+          <li>🌿 Без використання хімічних деформаторів</li>
+          <li>📦 Безпечне індивідуальне пакування</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- СЕКЦІЯ FAQ -->
+  <section id="faq" class="faq-section container">
+    <div class="section-title">
+      <h2>Часті запитання (FAQ)</h2>
+      <p>Відповіді на популярні питання наших покупців</p>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Як працює знижка від 5 кг?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>При замовленні від 5 кг діє спеціальна програма: кожний кілограм, починаючи з 5-го, додає +3% знижки до всього вашого замовлення (наприклад: 5 кг = 3%, 6 кг = 6%, 7 кг = 9% і т.д.). Калькулятор у модальному вікні автоматично підрахує вашу вигоду!</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Чи шкодить формочка самому яблуку?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Ні! Наші форми виготовлені з харчового дихаючого пластику з ультрафіолетовим фільтром. Вона лише обмежує вектор росту плоду, не порушуючи його внутрішню структуру та смакові якості.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Як здійснюється доставка по Україні?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Ми ретельно пакуємо кожне яблуко у спеціальні м'які ложементи та відправляємо Новою Поштою або Укрпоштою в день збору або наступного дня. Доставка займає 1-2 дні.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- МОДАЛЬНЕ ВІКНО ЗАМОВЛЕННЯ -->
+  <div id="orderModal" class="modal-backdrop hidden">
+    <div class="modal-window">
+      <button id="closeModal" class="modal-close">&times;</button>
+      <div class="modal-header">
+        <h3 id="modalProductTitle">Оформлення замовлення</h3>
+        <p id="modalProductSubtitle" class="modal-subtitle"></p>
+      </div>
+
+      <form id="orderForm" class="order-form">
+        <input type="hidden" id="productId">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">Ім'я *</label>
+            <input type="text" id="firstName" required placeholder="Тарас">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Прізвище *</label>
+            <input type="text" id="lastName" required placeholder="Шевченко">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" required placeholder="example@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Номер телефону *</label>
+            <input type="tel" id="phone" required placeholder="+38 (000) 000-00-00">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="weightInput">Кількість (кг) *</label>
+          <input type="number" id="weightInput" min="1" max="100" value="1" required>
+          <small class="discount-badge-info" id="discountInfo">Замовте від 5 кг для отримання додаткової знижки!</small>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Адреса доставки (Місто, № відділення пошти) *</label>
+          <input type="text" id="address" required placeholder="м. Київ, Нова Пошта №15">
+        </div>
+
+        <div class="form-group">
+          <label for="comment">Коментар до замовлення</label>
+          <textarea id="comment" rows="3" placeholder="Побажання щодо часу доставки або дозрівання..."></textarea>
+        </div>
+
+        <!-- РОЗРАХУНОК ВАРТОСТІ -->
+        <div class="price-summary">
+          <div class="summary-line">
+            <span>Базова ціна:</span>
+            <span id="basePriceCalc">0 грн</span>
+          </div>
+          <div class="summary-line discount-line">
+            <span>Знижка (<span id="discountPercent">0%</span>):</span>
+            <span id="discountAmount">-0 грн</span>
+          </div>
+          <div class="summary-line total-line">
+            <span>Разом до сплати:</span>
+            <span id="finalTotalPrice">0 грн</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Підтвердити замовлення</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ПІДВАЛ (FOOTER) ТА КАРТА -->
+  <footer id="contacts" class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <h3>Яблуневий Світ</h3>
+        <p>Натуральні фрукти прямо з наших садів у Черкаській області.</p>
+        <div class="contact-details">
+          <p><strong>📍 Локація:</strong> Черкаська обл., с. Садове, вул. Яблунева, 12</p>
+          <p><strong>📞 Телефон:</strong> <a href="tel:+380971234567">+38 (097) 123-45-67</a></p>
+          <p><strong>✉️ Пошта:</strong> <a href="mailto:info@yablunevyi-svit.ua">info@yablunevyi-svit.ua</a></p>
+          <p><strong>🕒 Графік:</strong> Пн-Сб: 08:00 - 19:00</p>
+        </div>
+      </div>
+
+      <div class="footer-map">
+        <h4>Ми на карті Черкащини</h4>
+        <div class="map-wrapper">
+          <iframe 
+            title="Карта Черкаської області"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=31.8000%2C49.3000%2C32.3000%2C49.6000&amp;layer=mapnik" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 «Яблуневий Світ». Всі права захищені.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
